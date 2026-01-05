@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+}
+
+button {
+    background: transparent;
+    color: white;
+    margin-top: 30vh;
+    padding: 20px;
+    width: 250px;
+    border: solid #6f42c1;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    font-size: medium;
+    font-family: "Manrope";
+}
+
+button:hover {
+    background-color: #6f42c1;
+    box-shadow: 0 0 40px #6f42c1;
+    border-radius: 10px;
+}
