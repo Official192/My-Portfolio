@@ -1,0 +1,229 @@
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+     font-family: 'Nunito Sans' !important;
+}
+
+
+body {
+    color: #e0e0e0 !important;
+    background-color: black !important;         /* Ensures default text is white */
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+    }
+
+
+    .skillstext {
+       background-color:#6e42c14d;
+       color: white !important;
+    }
+
+    .project-img {
+        height: 150px !important;
+        width: 250px !important;
+        object-fit: cover;
+    }
+ .activebar {
+    width: 10px;
+    height: 10px;
+    border-radius: 50% !important;
+    background-color: green;
+    margin-right: 8px;
+    position: relative; /* Necessary for the pulse positioning */
+  }
+
+  /* The pulsing ring */
+  .activebar::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: green;
+    animation: pulse-ring 2s infinite;
+    opacity: 0.7;
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+
+  .blob {
+    position: fixed;
+    width: 500px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(111, 66, 193, 0.15) 0%, rgba(111, 66, 193, 0) 70%);
+    border-radius: 50%;
+    z-index: -1; /* Keeps them behind your text */
+}
+
+.blob-1 {
+    top: -10%;
+    left: -10%;
+      background: radial-gradient(circle, rgba(76, 0, 130, 0.228) 0%, rgba(75, 0, 130, 0) 70%);
+}
+
+.blob-2 {
+    bottom: 30%;
+    right: -5%;
+    background: radial-gradient(circle, rgba(76, 0, 130, 0.329) 0%, rgba(75, 0, 130, 0) 70%);
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+/* Fix the Profile Image */
+.container-sm img {
+    box-shadow: 0 0 70px rgba(168, 85, 247, 0.4)!important;  
+}
+
+#viewbtn, #contactbtn {
+    height: 40px; 
+    text-wrap: nowrap;
+}
+
+:root {
+    --main-color:#6f42c1;
+    --glass: rgba(255,255,255, 0.05);
+    --backdrop-filter: blur(90px);
+ }
+
+span, h2, h3 {
+      color:#a866ff !important;
+}
+
+h2, h3, .h5{
+    text-align: center;
+    font-family: "Lato" !important;
+    
+}
+
+.h5 {
+    color: #a855f7 !important;
+}
+
+ .btn-purple {
+    background-color: #6f42c1 !important;
+     color: white !important;
+    font-family: "Nunito Sans" !important
+ }
+
+
+ .btn-purple:hover {
+   box-shadow: 0 0 30px #6f42c1;
+}
+
+.btn-white:hover {
+    box-shadow: 0 0 30px white;
+}
+
+
+
+ .navbar{
+    background: var(--glass);
+    border-radius: 10px;
+    backdrop-filter: var(--backdrop-filter);
+}
+
+nav a {
+    text-decoration:solid;
+    color: white !important;
+}
+
+nav a:hover {
+    color: #6f42c1 !important;
+}
+
+
+.col-6, .col-7{
+  background: rgba(255, 255, 255, 0.05); /* Slight white tint */
+    backdrop-filter: blur(10px);           /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease;      
+}
+
+.col-6:hover, .col-7:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+    border-color: #a855f7;
+}
+
+.counter {
+background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+  
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width:25vh !important;
+    padding-top: 1vh;
+    padding-bottom: 0;
+}
+
+
+
+
+.counter::before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vmax;
+    height: 150px;
+    background: #6f42c1;
+    border-radius: 50%;
+    filter: blur(90px); /* This creates the soft glow effect */
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.icons{
+    font-size: xx-large;
+    color: #B197FC;
+}
+
+
+#about {
+    background: var(--glass);
+    border-radius: 30px;
+}
+
+#bar {
+    background-color: #6610f2;
+    border-radius: 4px;
+    height: 10px;
+    width: 60px;
+}
+
+.back{
+    border-radius: 30px;
+    background:var(--glass);
+}
+
+.form-control:focus {
+    border-color: #6f42c1 !important;
+    box-shadow: 0 0 202px #6f42c1;
+      border: solid;
+}
+
+.form-control {
+     background-color: rgba(0, 0, 0, 0.569) !important;
+     color: white !important;
+}
+
+  textarea {
+        height: 20vh;
+        resize: none !important;
+    }
