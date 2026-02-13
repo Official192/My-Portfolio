@@ -20,6 +20,7 @@ body {
     .skillstext {
        background-color:#6e42c14d;
        color: white !important;
+       font-size: small;
     }
 
     .project-img {
