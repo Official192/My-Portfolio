@@ -158,6 +158,7 @@ nav a:hover {
 .col-6:hover, .col-7:hover {
     transform: translateY(-10px); /* Lift up on hover */
     border-color: #a855f7;
+    background-color: #33098024;
 }
 
 .counter {
@@ -170,9 +171,6 @@ background: rgba(255, 255, 255, 0.05);
     padding-top: 1vh;
     padding-bottom: 0;
 }
-
-
-
 
 .counter::before {
     content: "";
