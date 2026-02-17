@@ -1,25 +1,28 @@
-
 * {
     box-sizing: border-box;
 }
 
-p {
-     font-family: 'Nunito Sans' !important;
+html {
+    scroll-behavior: smooth !important;
 }
-
 
 body {
     color: #e0e0e0 !important;
-    background-color: black !important;         /* Ensures default text is white */
+    background-color: black !important;  
+    font-family: 'Nunito Sans' !important;
     min-height: 100vh;
     overflow-x: hidden;
     }
 
+    nav{
+        border: rgba(128, 128, 128, 0.147) 1px solid;
+    }
 
     .skillstext {
-       background-color:#6e42c14d;
-       color: white !important;
-       font-size: small;
+       background-color:#2310454d;
+       color: #ad82ff !important;
+       font-size: 0.82rem;
+       border: solid #6f42c1 1px;
     }
 
     .project-img {
@@ -27,6 +30,8 @@ body {
         width: 250px !important;
         object-fit: cover;
     }
+
+
  .activebar {
     width: 10px;
     height: 10px;
@@ -48,6 +53,14 @@ body {
     opacity: 0.7;
   }
 
+  .activetext{
+    color: rgba(7, 244, 90, 0.844) !important; 
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: rgba(0, 128, 0, 0.397) 1px solid;
+    background-color: rgba(0, 128, 0, 0.186);
+  }
+
   @keyframes pulse-ring {
     0% {
       transform: scale(1);
@@ -61,7 +74,7 @@ body {
 
   .blob {
     position: fixed;
-    width: 500px;
+    width: 600px;
     height: 600px;
     background: radial-gradient(circle, rgba(111, 66, 193, 0.15) 0%, rgba(111, 66, 193, 0) 70%);
     border-radius: 50%;
@@ -69,19 +82,15 @@ body {
 }
 
 .blob-1 {
-    top: -10%;
+    top: 35%;
     left: -10%;
       background: radial-gradient(circle, rgba(76, 0, 130, 0.228) 0%, rgba(75, 0, 130, 0) 70%);
 }
 
 .blob-2 {
     bottom: 30%;
-    right: -5%;
+    right: -20%;
     background: radial-gradient(circle, rgba(76, 0, 130, 0.329) 0%, rgba(75, 0, 130, 0) 70%);
-}
-
-html {
-    scroll-behavior: smooth !important;
 }
 
 /* Fix the Profile Image */
@@ -100,7 +109,7 @@ html {
     --backdrop-filter: blur(90px);
  }
 
-span, h2, h3 {
+span, h2, h3, h5 {
       color:#a866ff !important;
 }
 
@@ -110,20 +119,22 @@ h2, h3, .h5{
     
 }
 
-.h5 {
-    color: #a855f7 !important;
-}
 
  .btn-purple {
     background-color: #6f42c1 !important;
-     color: white !important;
-    font-family: "Nunito Sans" !important
+    color: white !important;
+    font-family: "Nunito Sans" !important;
+    box-shadow: 0 4px 15px #641cec4a;
  }
 
 
  .btn-purple:hover {
    box-shadow: 0 0 30px #6f42c1;
 }
+
+/* .btn-white{
+    text-overflow: ellipsis;
+} */
 
 .btn-white:hover {
     box-shadow: 0 0 30px white;
@@ -161,30 +172,14 @@ nav a:hover {
     background-color: #33098024;
 }
 
+
 .counter {
 background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-  
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    width:25vh !important;
+    width:23vh !important;
     padding-top: 1vh;
-    padding-bottom: 0;
-}
-
-.counter::before {
-    content: "";
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 25vmax;
-    height: 150px;
-    background: #6f42c1;
-    border-radius: 50%;
-    filter: blur(90px); /* This creates the soft glow effect */
-    opacity: 0.5;
-    z-index: -1;
 }
 
 .icons{
@@ -196,6 +191,7 @@ background: rgba(255, 255, 255, 0.05);
 #about {
     background: var(--glass);
     border-radius: 30px;
+     border: rgba(128, 128, 128, 0.147) 1px solid;
 }
 
 #bar {
@@ -208,6 +204,7 @@ background: rgba(255, 255, 255, 0.05);
 .back{
     border-radius: 30px;
     background:var(--glass);
+   border: rgba(128, 128, 128, 0.147) 1px solid;
 }
 
 .form-control:focus {
@@ -219,9 +216,15 @@ background: rgba(255, 255, 255, 0.05);
 .form-control {
      background-color: rgba(0, 0, 0, 0.569) !important;
      color: white !important;
+     
 }
 
   textarea {
         height: 20vh;
         resize: none !important;
+        border: rgba(128, 128, 128, 0.416) 1px solid !important;
+    }
+
+    input {
+        border: rgba(128, 128, 128, 0.416) 1px solid !important;
     }
