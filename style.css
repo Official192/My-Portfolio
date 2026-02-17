@@ -22,7 +22,7 @@ body {
        background-color:#2310454d;
        color: #ad82ff !important;
        font-size: 0.82rem;
-       border: solid #6f42c1 1px;
+       border: solid #6e42c194 1px;
     }
 
     .project-img {
@@ -132,10 +132,6 @@ h2, h3, .h5{
    box-shadow: 0 0 30px #6f42c1;
 }
 
-/* .btn-white{
-    text-overflow: ellipsis;
-} */
-
 .btn-white:hover {
     box-shadow: 0 0 30px white;
 }
@@ -191,13 +187,13 @@ background: rgba(255, 255, 255, 0.05);
 #about {
     background: var(--glass);
     border-radius: 30px;
-     border: rgba(128, 128, 128, 0.147) 1px solid;
+    border: rgba(128, 128, 128, 0.147) 1px solid;
 }
 
 #bar {
     background-color: #6610f2;
     border-radius: 4px;
-    height: 10px;
+    height: 7px;
     width: 60px;
 }
 
