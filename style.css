@@ -2,13 +2,39 @@
     box-sizing: border-box;
 }
 
+@media(max-width: 420px){
+
+    .navbar-nav{
+        justify-content: start !important;
+    display: flex !important;
+    flex-direction: row !important;
+        width: 300px;
+        padding: 10px;
+        gap: 30px !important;
+    }
+
+    .nav-item {
+        width: 10% !important; /* Ensures the link area is wide enough to center text */
+    }
+
+   
+ .icone{
+    width: 29%;
+    float: right;
+ }
+
+ nav a:hover{
+     border-bottom: #6710f264 solid 0.1px !important;
+ }
+}
+
 html {
     scroll-behavior: smooth !important;
 }
 
 body {
     color: #e0e0e0 !important;
-    background-color: black !important;  
+    background-color: rgb(6, 1, 11) !important;  
     font-family: 'Nunito Sans' !important;
     min-height: 100vh;
     overflow-x: hidden;
@@ -17,6 +43,22 @@ body {
     nav{
         border: rgba(128, 128, 128, 0.147) 1px solid;
     }
+    
+ .navbar{
+    background: var(--glass);
+    border-radius: 10px;
+    backdrop-filter: var(--backdrop-filter);
+}
+
+nav a {
+    text-decoration:solid;
+    color: white !important;
+}
+
+nav a:hover {
+    color: #6f42c1 !important;
+    border-bottom: #6710f269 solid 0.5px;
+}
 
     .skillstext {
        background-color:#2310454d;
@@ -138,20 +180,6 @@ h2, h3, .h5{
 
 
 
- .navbar{
-    background: var(--glass);
-    border-radius: 10px;
-    backdrop-filter: var(--backdrop-filter);
-}
-
-nav a {
-    text-decoration:solid;
-    color: white !important;
-}
-
-nav a:hover {
-    color: #6f42c1 !important;
-}
 
 
 .col-6, .col-7{
@@ -204,9 +232,7 @@ background: rgba(255, 255, 255, 0.05);
 }
 
 .form-control:focus {
-    border-color: #6f42c1 !important;
-    box-shadow: 0 0 202px #6f42c1;
-      border: solid;
+    border: solid #6e42c1 1px !important;
 }
 
 .form-control {
