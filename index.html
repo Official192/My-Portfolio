@@ -18,12 +18,12 @@
 <div class="blob blob-2"></div>
 
   <!-- Navbar -->
-<nav class="navbar mt-3 p-3 col-11 col-md-5 col-lg-5 m-auto navbar-expand-lg fixed-top">
+<nav class="navbar mt-3 p-3 col-11 m-auto navbar-expand-lg fixed-top">
   <div class="container-sm">
     <a class="navbar-brand">MH</a>
     
     <button class="navbar-toggler" style="color: #6e42c15d;"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class='bx bx-menu' style='color:#8e57f6; font-size: 1.7rem;'  ></i>
+      <i class='bx bx-menu' style='color:#8e57f6; font-size: 1.7rem;'></i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,7 +47,8 @@
             <i class='bx bxl-github' style='color:#a879e7; font-size: 1.5rem;'></i>
           </a>
         </li>
-      </ul>
+        </ul>
+     
     </div>
   </div>
 </nav>
@@ -60,16 +61,18 @@
 
     <div class="col-10 col-md-4 col-lg-7 mt-5">
       <span class="activetext d-inline-flex align-items-center px-3 py-1">
-  <div class="activebar me-2"></div>
+  <div class="activebar"></div>
   Available For Projects 
 </span>
 
-      <h1 class="display-3 fw-bold">Hi, I'm <span>Hanif</span></h1>
+      <h1 class="display-3 fw-bold">Hi, I'm <span style="color:#a879e7;">Hanif</span></h1>
       <p class="lead"> Passionate Web Designer and Developer dedicated to building clean, 
         performant web applications. With expertise in modern frontend technologies.</p>
         
-          <button id="viewbtn" class="btn btn-purple">View Work</button>
-          <a id="contactbtn" href="" class="btn btn-white btn-outline-light">Download CV</a>
+        <div class="d-flex text-nowrap gap-1">
+          <button class="btn btn-purple px-3 p-2">View Work</button>
+          <a href="" class="btn btn-white btn-outline-light px-3 p-2" >Download CV</a>
+          </div>
     </div>
     
     <div class="col-md-3 col-lg-2 mt-5 col-8">
@@ -108,7 +111,7 @@
 
   <!-- Project Counter -->
 
-<div class="container counter text-center">
+<div class="container counter">
     <h2 id="projectCounter">0</h2>
     <p>Projects</p>
 </div>
@@ -119,26 +122,46 @@
 <section class="mt-5 container">
   <h2>Recent Projects</h2>
   
-  <div class="row justify-content-center text-center gap-4 p-3">
-    <div class="col-7 col-md-3 col-lg-2 p-3 rounded">
+  <div class="row justify-content-center text-center text-secondary gap-4 p-3">
+    <div class="col-7 col-md-3 col-lg-2 p-2 rounded">
       <img src="assets/img/project1.webp" class="project-img img-fluid rounded" alt="project1">
      <h2 class="mt-3 h5">To-do App</h2>
-        <p class="mt-3">This app is built in HTML, CSS, JavaScript, Bootstrap.</p>
-        <a href="https://official192.github.io/To-do-App/" class="btn btn-sm btn-purple">Check Out</a>
-    </div>
+        <p class="mt-3 small">Organize your tasks with this interactive app.</p>
+        <div class="skillsbar d-flex flex-wrap gap-2 justify-content-center">
+          <span class="skillstext px-2 rounded-pill p-1">HTML</span>
+          <span class="skillstext px-2 rounded-pill p-1">JS</span>
+          <span class="skillstext px-3 rounded-pill p-1">Bootstrap</span>
+        </div>
+          <a href="https://official192.github.io/To-do-App/" class="btn btn-sm btn-purple mt-3 w-100">Check Out</a>
+          </div>
 
-     <div class="col-7 col-md-3 col-lg-2 p-3 rounded">
+     <div class="col-7 col-md-3 col-lg-2 p-2 rounded">
       <img src="assets/img/project2.webp" class="project-img img-fluid rounded"  alt="project2">
       <h2 class="mt-3 h5">Clipboard App</h2>
-          <p class="mt-3">This app is built in Tailwind css, HTML , CSS, Javascript.</p>
-        <a href="https://official192.github.io/Copy-in-Clipboard/" class="btn btn-sm btn-purple">Check Out</a>
+          <p class="mt-3 small">Manage and store copied snippets efficiently.</p>
+           <div class="skillsbar d-flex flex-wrap gap-2 justify-content-center">
+          <span class="skillstext px-2 rounded-pill p-1 px-0">HTML</span>
+          <span class="skillstext px-2 rounded-pill p-1">JS</span>
+          <span class="skillstext px-3 rounded-pill p-1">Tailwind</span>
+        </div>
+        <a href="https://official192.github.io/Copy-in-Clipboard/" class="btn btn-sm btn-purple mt-3 w-100">Check Out</a>
+        
     </div>
 
-     <div class="col-7 col-md-3 col-lg-2 p-3 rounded">
+     <span class="col-7 col-md-3 col-lg-2 p-2 rounded">
       <img src="assets/img/project3.webp" class="project-img img-fluid rounded" alt="project3">
       <h2 class="mt-3 h5">Theme Button</h2>
-        <p class="mt-3">This app is built in HTML, CSS, JavaScript, Bootstrap.</p>
-        <a href="https://official192.github.io/Toggle-Button/" class="btn btn-sm btn-purple">Check Out</a>
+        <p class="mt-3 small">A smooth theme switcher with local storage.</p>
+         <div class="skillsbar d-flex flex-wrap gap-2 mt-3 justify-content-center">
+          <span class="skillstext px-2 rounded-pill p-1">HTML</span>
+          <span class="skillstext px-2 rounded-pill p-1">JS</span>
+          <span class="skillstext px-3 rounded-pill p-1">Bootstrap</span>
+          
+        </div>
+        
+         <a href="https://official192.github.io/Toggle-Button/" class="btn btn-sm btn-purple mt-3 w-100">Check Out</a>
+      </span>  
+        
     </div>
   </div>
 </section>

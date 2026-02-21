@@ -6,8 +6,8 @@
 
     .navbar-nav{
         justify-content: start !important;
-    display: flex !important;
-    flex-direction: row !important;
+        display: flex !important;
+        flex-direction: row !important;
         width: 300px;
         padding: 10px;
         gap: 30px !important;
@@ -34,21 +34,20 @@ html {
 
 body {
     color: #e0e0e0 !important;
-    background-color: rgb(6, 1, 11) !important;  
+    background-color: rgb(5, 3, 3) !important;  
     font-family: 'Nunito Sans' !important;
     min-height: 100vh;
     overflow-x: hidden;
     }
 
-    nav{
-        border: rgba(128, 128, 128, 0.147) 1px solid;
-    }
-    
- .navbar{
+ nav{
     background: var(--glass);
+    border: rgba(128, 128, 128, 0.147) 1px solid;
     border-radius: 10px;
+    max-width: 86vh;
     backdrop-filter: var(--backdrop-filter);
-}
+    list-style: none;
+    }
 
 nav a {
     text-decoration:solid;
@@ -65,13 +64,7 @@ nav a:hover {
        color: #ad82ff !important;
        font-size: 0.82rem;
        border: solid #6e42c194 1px;
-    }
-
-    .project-img {
-        height: 150px !important;
-        width: 250px !important;
-        object-fit: cover;
-    }
+    }    
 
 
  .activebar {
@@ -80,10 +73,10 @@ nav a:hover {
     border-radius: 50% !important;
     background-color: green;
     margin-right: 8px;
-    position: relative; /* Necessary for the pulse positioning */
+    position: relative; 
   }
 
-  /* The pulsing ring */
+ 
   .activebar::after {
     content: "";
     position: absolute;
@@ -135,14 +128,8 @@ nav a:hover {
     background: radial-gradient(circle, rgba(76, 0, 130, 0.329) 0%, rgba(75, 0, 130, 0) 70%);
 }
 
-/* Fix the Profile Image */
 .container-sm img {
     box-shadow: 0 0 70px rgba(168, 85, 247, 0.4)!important;  
-}
-
-#viewbtn, #contactbtn {
-    height: 40px; 
-    text-wrap: nowrap;
 }
 
 :root {
@@ -151,16 +138,11 @@ nav a:hover {
     --backdrop-filter: blur(90px);
  }
 
-span, h2, h3, h5 {
-      color:#a866ff !important;
-}
-
 h2, h3, .h5{
+    color:#a866ff !important;
     text-align: center;
     font-family: "Lato" !important;
-    
 }
-
 
  .btn-purple {
     background-color: #6f42c1 !important;
@@ -177,9 +159,6 @@ h2, h3, .h5{
 .btn-white:hover {
     box-shadow: 0 0 30px white;
 }
-
-
-
 
 
 .col-6, .col-7{
@@ -204,15 +183,10 @@ background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     width:23vh !important;
     padding-top: 1vh;
+    text-align: center;
 }
 
-.icons{
-    font-size: xx-large;
-    color: #B197FC;
-}
-
-
-#about {
+#about, .back {
     background: var(--glass);
     border-radius: 30px;
     border: rgba(128, 128, 128, 0.147) 1px solid;
@@ -225,14 +199,9 @@ background: rgba(255, 255, 255, 0.05);
     width: 60px;
 }
 
-.back{
-    border-radius: 30px;
-    background:var(--glass);
-   border: rgba(128, 128, 128, 0.147) 1px solid;
-}
-
 .form-control:focus {
     border: solid #6e42c1 1px !important;
+    box-shadow: 0 0 5px #6e42c1 !important;
 }
 
 .form-control {
