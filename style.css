@@ -1,19 +1,23 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
 :root {
     --main-color:#6f42c1;
     --glass: rgba(255,255,255, 0.05);
  }
 
  body {
+    background-color: black !important;
     color: #e0e0e0 !important;
     font-family: 'Nunito Sans' !important;
     min-height: 100vh;
     overflow-x: hidden;
     }
 
-
-
+    /* Navbar Section*/
     
-
  nav{
     background: var(--glass);
     border: rgba(128, 128, 128, 0.147) 1px solid;
@@ -24,22 +28,16 @@
     }
 
 nav a {
-    text-decoration:solid;
+    text-decoration: none;
     color: white !important;
 }
 
 nav a:hover {
-    color: #6f42c1 !important;
+    color: var(--main-color) !important;
     border-bottom: #6710f269 solid 0.5px;
 }
-
-    .skillstext {
-       background-color:#2310454d;
-       color: #ad82ff;
-       font-size: 0.82rem;
-       border: solid #6e42c194 1px;
-    }    
-
+       
+  /* Active Bar */
 
  .activebar {
     width: 10px;
@@ -50,7 +48,6 @@ nav a:hover {
     position: relative; 
   }
 
- 
   .activebar::after {
     content: "";
     position: absolute;
@@ -70,15 +67,14 @@ nav a:hover {
   }
 
   @keyframes pulse-ring {
-    0% {
-      transform: scale(1);
-      opacity: 0.7;
-    }
-    100% {
-      transform: scale(3);
-      opacity: 0;
-    }
+
+    0% {transform: scale(1); opacity: 0.7;}
+    100% {transform: scale(3); opacity: 0;}
+
   }
+
+
+  /* Blobs */
 
   .blob {
     position: fixed;
@@ -102,34 +98,12 @@ nav a:hover {
     background: radial-gradient(circle, rgba(76, 0, 130, 0.329) 0%, rgba(75, 0, 130, 0) 70%);
 }
 
-.container-sm img {
-    box-shadow: 0 0 70px rgba(168, 85, 247, 0.4);  
-}
-
-h2, h3, .h5{
-    color:#a866ff !important;
-    text-align: center;
-    font-family: "Lato";
-}
-
- .btn-purple {
-    background-color: #6f42c1 !important;
-    color: white !important;
-    font-family: "Nunito Sans";
-    box-shadow: 0 4px 15px #641cec4a;
- }
 
 
- .btn-purple:hover {
-   box-shadow: 0 0 30px #6f42c1;
-}
 
-.btn-white:hover {
-    box-shadow: 0 0 30px white;
-}
+   /* Grids */
 
-
-.col-6, .col-7{
+.col-6, .col-7, #about, .back{
   background: rgba(128, 128, 128, 0.132); /* Slight white tint */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
@@ -152,60 +126,91 @@ background: rgba(255, 255, 255, 0.05);
     text-align: center;
 }
 
-#about, .back {
-    background: var(--glass);
-    border-radius: 30px;
-    border: rgba(128, 128, 128, 0.147) 1px solid;
+/* Button Designs */
+
+ .btn-purple {
+    background-color: var(--main-color) !important;
+    color: white !important;
+    font-family: "Nunito Sans";
+    box-shadow: 0 4px 15px #641cec4a;
+ }
+
+ .btn-purple:hover {
+   box-shadow: 0 0 30px var(--main-color);
 }
 
-#bar {
-    background-color: #6610f2;
-    border-radius: 4px;
-    height: 7px;
-    width: 60px;
+.btn-white:hover {
+    box-shadow: 0 0 30px white;
 }
 
-.form-control:focus {
-    border: solid #6e42c1 1px !important;
-    box-shadow: 0 0 5px #6e42c1 !important;
+
+/* Fixes */
+
+
+  .skillstext {
+       background-color:#2310454d;
+       color: #ad82ff;
+       font-size: 0.82rem;
+       border: solid #6e42c194 1px;
+    } 
+
+    .profile {
+    box-shadow: 0 0 70px rgba(168, 85, 247, 0.4);  
 }
+
+h2, h3, .h5{
+    color:#a866ff !important;
+    text-align: center;
+    font-family: "Lato";
+}
+
+
+
+/* Forms Section */
 
 .form-control {
      background-color: rgba(0, 0, 0, 0.569) !important;
-     color: white !important;
-     
+     color: white !important;   
+     border: rgba(128, 128, 128, 0.416) 1px solid !important;
 }
 
-  textarea {
+.form-control:focus {
+    border: solid var(--main-color) 1px !important;
+    box-shadow: 0 0 5px var(--main-color) !important;
+}
+
+ textarea {
         height: 20vh;
         resize: none !important;
         border: rgba(128, 128, 128, 0.416) 1px solid !important;
     }
 
-    input {
-        border: rgba(128, 128, 128, 0.416) 1px solid !important;
-    }
+ #bar {
+    background-color: #6610f2;
+    border-radius: 4px;
+    height: 7px;
+    width: 60px;
+ }
 
     .logo-git{
         font-size: 1.5rem;
         color:#a879e7;
     }
 
+    /* Responsiveness */
     
 @media(max-width: 420px){
 
     .navbar-nav{
         display: flex;
         flex-direction: row !important;
-        gap: 30px;
-    }
-
-    .nav-item {
-        width: 10%;
+        gap: 20px;
+        margin-top: 10px;
+        justify-content: center;
     }
 
  .icone{
-    width: 29%;
+    width: 100%;
     float: right;
  }
 }
