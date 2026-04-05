@@ -9,7 +9,7 @@
  }
 
  body {
-    background-color: black !important;
+    background-color: rgb(0, 0, 0) !important;
     color: #e0e0e0 !important;
     font-family: 'Nunito Sans' !important;
     min-height: 100vh;
@@ -98,27 +98,40 @@ nav a:hover {
     background: radial-gradient(circle, rgba(76, 0, 130, 0.329) 0%, rgba(75, 0, 130, 0) 70%);
 }
 
-
-
+.card-icon{
+    font-size: 2.5rem !important; 
+    color: #ad87f1;
+}
 
    /* Grids */
 
-.col-6, .col-7, #about, .back{
-  background: rgba(128, 128, 128, 0.132); /* Slight white tint */
+#about, .back{
+    padding: 30px !important;
+    background: rgb(20, 20, 20); /* Slight white tint */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
    transition: transform 0.3s ease, background-color 0.3s ease;     
 }
 
-.col-6:hover, .col-7:hover {
+.card-t{
+    padding: 10px;
+    background: var(--glass); /* Slight white tint */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+   transition: transform 0.3s ease, background-color 0.3s ease;     
+}
+
+
+.card-t:hover{
     transform: translateY(-10px); /* Lift up on hover */
     border-color: #a855f7;
+    box-shadow: 0 0 6px #a855f7;
     background-color: #33098024;
 }
 
 
 .counter {
-background: rgba(255, 255, 255, 0.05);
+    background: var(--glass);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     width:23vh !important;
@@ -143,6 +156,12 @@ background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 0 30px white;
 }
 
+.project-img{
+    border-radius: 10px;
+    height: 150px !important;
+    width: 400px !important;
+}
+
 
 /* Fixes */
 
@@ -150,6 +169,8 @@ background: rgba(255, 255, 255, 0.05);
   .skillstext {
        background-color:#2310454d;
        color: #ad82ff;
+       border-radius: 50px;
+       padding: 5px !important;
        font-size: 0.82rem;
        border: solid #6e42c194 1px;
     } 
@@ -158,12 +179,15 @@ background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 0 70px rgba(168, 85, 247, 0.4);  
 }
 
-h2, h3, .h5{
-    color:#a866ff !important;
+ h3{
+    color:#a559f1!important;
     text-align: center;
     font-family: "Lato";
 }
 
+h5, h2{
+    color:#aa50ff   !important;
+}
 
 
 /* Forms Section */
@@ -208,6 +232,12 @@ h2, h3, .h5{
         margin-top: 10px;
         justify-content: center;
     }
+
+   main{
+    text-align: center;
+   }
+
+
 
  .icone{
     width: 100%;
