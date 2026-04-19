@@ -39,7 +39,7 @@ nav a:hover {
 
 .navbar-nav{
     display: flex;
-    margin-left: 85px !important;
+    margin-left: 37px !important;
 }
        
   /* Active Bar */
@@ -184,8 +184,7 @@ color: white !important;
 
 .project-img{
     border-radius: 10px;
-    height: 140px !important;
-    width: 400px !important;
+
 }
 
 
@@ -265,8 +264,12 @@ h5, h2{
     text-align: center;
    }
 
+   .btn-con{
+    margin-left: 30px !important;
+   }
+
 .icon-span{
-    margin-left: 54px;
+    margin-left:11vh;
  }
 
  .detail{
@@ -277,5 +280,9 @@ h5, h2{
     text-align: end;
    display: flex;
 
+ }
+
+ .back{
+    width: 300px !important;
  }
 }
