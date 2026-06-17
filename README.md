@@ -13,7 +13,11 @@ A sleek, performant personal portfolio website featuring a modern dark theme and
   <img src="https://img.shields.io/badge/Html--orange?style=for-the-badge&logo=html5&logoColor=orange" alt="HTML">
   <img src="https://img.shields.io/badge/css--1572B6?style=for-the-badge&logo=cssdesignawards&logoColor=blue" alt="CSS">
   <img src="https://img.shields.io/badge/Javascript--yellow?style=for-the-badge&logo=javascript" alt="JS">
+  <img src="https://img.shields.io/badge/Bootstrap--723EC3?style=for-the-badge&logo=Bootstra" alt="Bootstrap">
 </div>
+
+![Static Badge](p)
+
 
 <br>
 
