@@ -20,18 +20,14 @@
         background: rgba(255, 255, 255, 0.062);
         border: rgba(128, 128, 128, 0.147) 1px solid;
         border-radius: 15px;
+        -webkit-backdrop-filter: blur(90px);
         backdrop-filter: blur(90px);
         list-style: none;
         }
          
-       .navbar-nav{
-            padding-right: 40px;
-           
-        }
-    nav a {
-        text-decoration: none;
-        color: white !important;
-    }
+    .navbar-nav{padding-right: 40px;}
+
+    nav a {text-decoration: none; color: white !important;}
 
     nav a:hover {color: var(--main-color) !important;}
 
@@ -90,12 +86,12 @@
     .blob-2 {bottom: 30%; right: -22%;}
 
 
+
     .icon-span{
         font-size: 2rem; 
         padding: 10px;
         width: 56px;
         color: #ad87f1;
-        align-items: center;
         border: solid 1px #4815a75e;
         border-radius: 10px;
         margin-bottom: 17px;
@@ -156,7 +152,8 @@
     .btn-purple {
         background-color: var(--main-color) !important;
         color: white !important;
-             font-family: 'Nunito Sans' !important; font-weight: 260 !important;
+        font-family: 'Nunito Sans' !important; 
+        font-weight: 200 !important;
         box-shadow: 0 4px 15px #641cec4a;
     }
 
@@ -188,24 +185,24 @@
         background-color:#2310454d;
         color: #ad82ff;
         border-radius: 50px;
-        padding: 5px;
-        font-family: 'Inter'; font-weight: 350 !important;
-        padding-right: 16px;
-        padding-left: 16px;
+        padding: 5px 16px;
+        font-family: 'Inter',sans-serif; 
+        font-weight: 350 !important;
         font-size: 0.82rem;
         border: solid #6e42c194 1px;
         } 
 
 
-        h2{font-family: 'Lato' !important; font-weight: 399 !important;font-family: 'Inter'; font-weight: 350 !important;}
+        h2{font-family: 'Lato'; font-weight: 350 !important;}
 
-    h3{
-        color:#a559f1!important;
+    h3,h4,h5{
         text-align: center;
+        margin-top: 15px !important;
+        color:#aa50ff !important;
+        font-family: 'Inter';
+        font-weight: 350 !important;
         
     }
-
-    h4, h5{margin-top: 15px !important; color:#aa50ff !important;font-family: 'Inter'; font-weight: 350 !important;}
 
     .frameworks{
         display: flex;
@@ -213,7 +210,6 @@
         justify-content: center;
         flex-wrap: wrap;
     }
-
  
 
     /* Forms Section */
@@ -242,9 +238,9 @@
         width: 60px;
     }
 
-        .logo-git{
+        .font-logo{
             font-size: 1.5rem;
-            color:#a879e7;
+            color:#8e57f6;
         }
 
         /* Responsiveness */
@@ -256,26 +252,20 @@
                  display: inline-block !important;  
                  margin-top: 10px;   
                  padding-right: 0 !important; 
-                 align-items: center !important;
+                 align-items: center;
        
                 }
 
         nav li{ 
             display: inline-block;
-            align-items: center;
             padding: 5px;
             margin-left: 5px;
-
         }
       
 
-    main,.wrapper {
-        text-align: center !important;
-    }
+    main,.wrapper {text-align: center;}
 
-    main p{
-        font-size: large !important;
-    }
+    main p{font-size: large !important;}
 
     .btn-con, .icon-span{
         justify-content: center;
@@ -283,9 +273,7 @@
     }
 
 
-    #about{
-        font-size:0.9rem;
-    }
+    #about{font-size:0.9rem; }
 
 
     }
