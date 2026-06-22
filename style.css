@@ -27,9 +27,9 @@
          
     .navbar-nav{padding-right: 40px;}
 
-    nav a {text-decoration: none; color: white !important;}
+    .navbar a {text-decoration: none; color: white;}
 
-    nav a:hover {color: var(--main-color) !important;}
+    .navbar a:hover {color: var(--main-color);}
 
  
     /* Active Bar */
