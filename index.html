@@ -18,15 +18,15 @@
 
 <body class="bg-black">
   
-  <div class="blob blob-1"></div>
-<div class="blob blob-2"></div>
+  <div class="blob blob-1" aria-hidden="true"></div>
+<div class="blob blob-2"  aria-hidden="true"></div>
 
   <!-- Navbar -->
 <nav class="navbar m-auto col-11 col-lg-5 p-3 mt-4 navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html"><img src="assets/img/logo.webp" width="35" height="35" alt="nav-logo"></a>
     
-    <button class="navbar-toggler" style="color: #6e42c15d;"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" style="color: #6e42c15d;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class='bx bx-menu font-logo'></i>
     </button>
 
@@ -68,13 +68,13 @@
   Available For Projects 
 </span>
 
-      <h1 class="display-3 mt-3" style="font-weight:580;">Hi, I'm <span style="color:#8000FF">Hanif</span></h1>
+      <h1 class="display-3 mt-3" style="font-weight:500;">Hi, I'm <span style="color:#8000FF">Hanif</span></h1>
       <p class="lead"> Passionate Web Designer and Developer dedicated to building clean, 
         performant web applications. With expertise in modern frontend technologies.</p>
         
         <div class="d-flex gap-2 btn-con">
            <a href="#work" class="btn btn-purple px-3 p-2">View Work</a>
-          <a href="assets/Docs/Muhammad Hanif.pdf" class="btn btn-white btn-outline-light px-3 p-2" download>Download CV</a>
+          <a href="assets/Docs/Muhammad-Hanif-Latest.pdf" class="btn btn-white btn-outline-light px-3 p-2" download>Download CV</a>
           </div>
     </div>
     
@@ -232,7 +232,7 @@
     <div class="row p-4">
       <div class="cardm col-11 col-md-6 col-lg-4">
 
-       <form onsubmit="event.preventDefault()">
+     <form action="https://formsubmit.co/business12392@gmail.com" method="POST">
 
         <label for="name" class="form-label">Name</label>
         <input class="form-control" type="text" autocomplete="name" name="name" id="name" required>
@@ -242,8 +242,10 @@
         <input class="form-control" type="email" autocomplete="email" name="email" id="email" required>
           
       
-        <label class="mt-3 form-label" for="comment">Comment</label>
-        <textarea class="form-control" name="comment" rows="4" id="comment"></textarea>
+        <label class="mt-3 form-label" for="message">Comment</label>
+        <textarea class="form-control" name="message" rows="4" id="message" required></textarea>
+
+
 
         <button class="btn btn-purple mt-3" type="submit">Submit Here</button>
 
