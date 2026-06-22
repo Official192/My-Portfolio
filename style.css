@@ -9,8 +9,8 @@
     }
 
     body {
-        color: #e0e0e0 !important;
-        font-family: 'Nunito Sans' !important;
+        color: #e0e0e0;
+        font-family: 'Nunito Sans';
         min-height: 100vh;
         }
 
@@ -27,9 +27,9 @@
          
     .navbar-nav{padding-right: 40px;}
 
-    .navbar a {text-decoration: none; color: white;}
+    .navbar a {text-decoration: none;  color: white !important;}
 
-    .navbar a:hover {color: var(--main-color);}
+    .navbar a:hover {color: var(--main-color) !important;}
 
  
     /* Active Bar */
@@ -54,6 +54,9 @@
     }
 
     .activetext{
+        display: inline-flex;
+       align-items: center;
+       width: 185px;
         color: rgba(7, 244, 90, 0.844); 
         border-radius: 8px;
         font-size: 0.85rem;
@@ -82,7 +85,6 @@
     }
 
     .blob-1 {top: 35%; left: -20%;}
-
     .blob-2 {bottom: 30%; right: -22%;}
 
 
@@ -111,13 +113,13 @@
         align-items: center;
     }
 
-    p{color: rgb(175, 175, 175);}
+    p{color: rgb(175, 175, 175)}
 
 
     /* Grids */
 
     .cardm{
-        padding: 30px !important;
+        padding: 30px;
         background: var(--glass);
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 15px;
@@ -142,27 +144,26 @@
         background: var(--glass);
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 10px;
-        width: 165px !important;
+        width: 165px;
         padding-top: 1px;
         text-align: center;
     }
 
     /* Button Designs */
 
-    .btn-purple {
-        background-color: var(--main-color) !important;
-        color: white !important;
-        font-family: 'Nunito Sans' !important; 
-        font-weight: 200 !important;
+    #btn-purple {
+        background-color: var(--main-color);
+        color: white;
+        font-family: 'Nunito Sans'; 
+        font-weight: 200;
         box-shadow: 0 4px 15px #641cec4a;
     }
 
-    .btn-purple:hover {box-shadow: 0 0 30px var(--main-color);}
+    #btn-purple:hover {box-shadow: 0 0 30px var(--main-color)}
 
-    .btn-white:hover {box-shadow: 0 0 30px white;}
-  
+    .btn-white:hover {box-shadow: 0 0 30px white}
 
-    .box {position: relative; overflow: hidden;}
+    .box {position: relative; overflow: hidden}
 
 
     .box::after {
@@ -193,14 +194,14 @@
         } 
 
 
-       #work h2{color:#aa50ff; font-weight: 300;}
+       #work h2{color:#aa50ff; font-weight: 300}
 
-    h3,h4,h5{
+   h3,h4,h5{
         text-align: center;
-        margin-top: 15px !important;
-        color:#aa50ff !important;
+        margin-top: 15px;
+        color:#aa50ff;
         font-family: 'Inter';
-        font-weight: 300 !important;
+        font-weight: 300;
         
     }
 
@@ -263,17 +264,13 @@
         }
       
 
-    main,.wrapper {text-align: center;}
+    main,.wrapper {text-align: center}
 
-    main p{font-size: large !important;}
+    main p{font-size: large !important}
 
-    .btn-con, .icon-span{
-        justify-content: center;
-        place-self: center;
-    }
+    .btn-con, .icon-span{justify-content: center; place-self: center}
 
-
-    #about{font-size:0.9rem; }
+    #about{font-size:0.9rem}
 
 
     }
