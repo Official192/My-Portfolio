@@ -73,6 +73,7 @@
     }
 
 
+
     /* Blobs */
 
     .blob {
@@ -88,16 +89,16 @@
     .blob-1 {
         top: 35%;
         left: -20%;
-        background: radial-gradient(circle, rgba(76, 0, 130, 0.228) 0%, rgba(75, 0, 130, 0) 70%);
+        background: radial-gradient(circle, rgba(76, 0, 130, 0.228) 24%, rgba(75, 0, 130, 0) 70%);
+
     }
 
     .blob-2 {
         
         bottom: 30%;
         right: -19%;
-        background: radial-gradient(circle, rgba(76, 0, 130, 0.329) 0%, rgba(75, 0, 130, 0) 70%);
+        background: radial-gradient(circle, rgba(76, 0, 130, 0.329) 24%, rgba(75, 0, 130, 0) 70%);
     }
-
 
 
     .icon-span{
