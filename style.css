@@ -73,7 +73,6 @@
     }
 
 
-
     /* Blobs */
 
     .blob {
@@ -81,24 +80,14 @@
         pointer-events: none;
         width: 900px;
         height: 900px;
-        background: radial-gradient(circle, rgba(110, 66, 193, 0.195) 0%, rgba(110, 66, 193, 0) 70%);
+        background: radial-gradient(circle, rgba(110, 66, 193, 0.195) 24%, rgba(110, 66, 193, 0) 70%);
         border-radius: 50%;
         z-index: -1;
     }
 
-    .blob-1 {
-        top: 35%;
-        left: -20%;
-        background: radial-gradient(circle, rgba(76, 0, 130, 0.228) 24%, rgba(75, 0, 130, 0) 70%);
+    .blob-1 {top: 35%; left: -20%;}
 
-    }
-
-    .blob-2 {
-        
-        bottom: 30%;
-        right: -22%;
-        background: radial-gradient(circle, rgba(76, 0, 130, 0.329) 24%, rgba(75, 0, 130, 0) 70%);
-    }
+    .blob-2 {bottom: 30%; right: -22%;}
 
 
     .icon-span{
