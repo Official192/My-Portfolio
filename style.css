@@ -187,20 +187,20 @@
         border-radius: 50px;
         padding: 5px 16px;
         font-family: 'Inter',sans-serif; 
-        font-weight: 350 !important;
+        font-weight: 300;
         font-size: 0.82rem;
         border: solid #6e42c194 1px;
         } 
 
 
-        h2{color:#aa50ff !important; font-family: 'Lato'; font-weight: 350 !important;}
+       #work h2{color:#aa50ff; font-weight: 300;}
 
     h3,h4,h5{
         text-align: center;
         margin-top: 15px !important;
         color:#aa50ff !important;
         font-family: 'Inter';
-        font-weight: 350 !important;
+        font-weight: 300 !important;
         
     }
 
@@ -214,20 +214,20 @@
 
     /* Forms Section */
 
-    .form-control{
-        background-color: rgba(0, 0, 0, 0.569) !important;
-        color: white !important;   
-        border: rgba(128, 128, 128, 0.416) 1px solid !important;
+   #contact .form-control{
+        background-color: rgba(0, 0, 0, 0.569);
+        color: white;   
+        border: rgba(128, 128, 128, 0.416) 1px solid;
     }
 
-    .form-control:focus {
-        border: solid var(--main-color) 1px !important;
-        box-shadow: 0 0 5px var(--main-color) !important;
+    #contact .form-control:focus {
+        border: solid var(--main-color) 1px;
+        box-shadow: 0 0 5px var(--main-color);
     }
 
-    textarea {
+   #contact textarea {
             height: 130px;
-            resize: none !important;
+            resize: none;
             border: rgba(128, 128, 128, 0.416) 1px solid ;
         }
 
