@@ -1,27 +1,24 @@
-    *{scroll-behavior: smooth; box-sizing: border-box}
-
-    :root {--main-color:#6f42c1; --glass: rgba(14,14,14) }
+    :root {--main-color:#6f42c1; --glass: rgba(14,14,14); }
 
     body {
         color: #e0e0e0;
-        font-family: 'Nunito Sans';
+        font-family: 'Nunito Sans',sans-serif;
         min-height: 100vh;
         }
 
         /* Navbar Section*/
         
     nav{
-        background: rgba(255, 255, 255, 0.062);
-        border: rgba(128, 128, 128, 0.147) 1px solid;
-        border-radius: 15px;
-        -webkit-backdrop-filter: blur(90px);
-        backdrop-filter: blur(90px);
-        list-style: none;
-        }
+      background: rgba(255, 255, 255, 0.062);
+      border: rgba(128, 128, 128, 0.147) 1px solid;
+      border-radius: 15px;
+      backdrop-filter: blur(90px);
+      list-style: none;
+  }
          
     .navbar-nav{padding-right: 40px;}
-    .navbar a {text-decoration: none;  color: white !important;}
-    .navbar a:hover {color: var(--main-color) !important;}
+    .navbar a {color: white;}
+    .navbar a:hover {color: var(--main-color);}
 
  
     /* Active Bar */
@@ -47,8 +44,7 @@
 
     .activetext{
         display: inline-flex;
-       align-items: center;
-       width: 185px;
+        align-items: center;
         color: rgba(7, 244, 90, 0.844); 
         border-radius: 8px;
         font-size: 0.85rem;
@@ -113,15 +109,16 @@
 
     .cardm:hover{
         transform: translateY(-10px);
-        border-color: #a855f7;
-        box-shadow: 0 0 6px #a855f7;
-        background-color: #33098024;
+        border-color: #330980;
+        box-shadow: 0 0 13px #4009a581;
+        background-color: #33098036;
     }
 
     #about{
         border: 1px solid rgba(255, 255, 255, 0.1);
         background-color: var(--glass);
         border-radius: 20px;
+        padding: 20px;
     }
 
 .counter {
@@ -135,15 +132,15 @@
 
     /* Button Designs */
 
-    #btn-purple {
+    .btn-purple {
         background-color: var(--main-color);
         color: white;
-        font-family: 'Nunito Sans'; 
+        font-family: 'Nunito Sans',sans-serif ; 
         font-weight: 200;
         box-shadow: 0 4px 15px #641cec4a;
     }
 
-    #btn-purple:hover {box-shadow: 0 0 30px var(--main-color)}
+    .btn-purple:hover {box-shadow: 0 0 30px var(--main-color); background-color: var(--main-color);}
     .btn-white:hover {box-shadow: 0 0 30px white}
     .box {position: relative; overflow: hidden}
     .font-logo{font-size: 1.5rem; color:#8e57f6}
@@ -168,7 +165,7 @@
         color: #ad82ff;
         border-radius: 50px;
         padding: 5px 16px;
-        font-family: 'Inter',sans-serif; 
+        font-family: 'Inter',sans-serif ; 
         font-weight: 300;
         font-size: 0.82rem;
         border: solid #6e42c194 1px;
@@ -179,7 +176,7 @@
         text-align: center;
         margin-top: 15px;
         color:#aa50ff;
-        font-family: 'Inter';
+        font-family: 'Inter',sans-serif ;
         font-weight: 300;
     }
 
@@ -223,24 +220,18 @@
         /* Responsiveness */
         
     @media screen and (max-width: 420px) {
-
-        nav ul{
-                 display: inline-block !important;  
-                 margin-top: 10px;   
-                 padding-right: 0 !important; 
-                 align-items: center;
-                }
-
-        nav li{ 
-            display: inline-block;
-            padding: 5px;
-            margin-left: 5px;
+ 
+      .navbar ul, .navbar li{
+             display: inline-block !important;  
+             margin-top: 10px;   
+             padding-right: 0 !important; 
+             margin-left: 13px;
         }
-      
+
 
     main,.wrapper {text-align: center}
 
-    main p{font-size: large !important}
+    main p{font-size: large !important;}
 
     .btn-con, .icon-span{justify-content: center; place-self: center}
 
